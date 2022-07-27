@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8" id="col">
+
+            <div class="card"  style='margin-bottom: 10px; margin-top:10px '>
+                <div class="card-body">
+                    Scan interval. This is, how often the tab is scanned. Units: Seconds
+                    <input type="text" id="span" class="form-control" placeholder="Scan Interval" aria-describedby="basic-addon1">
+                </div>
+            </div>
+
+
+            <div class="card"  style='margin-bottom: 10px; margin-top:10px '>
+                <div class="card-body">
+                    Reclamation time. That is, how long tabs that are inactive after are recycled. Unit: second
+                    <input type="text" class="form-control" id="timeout" placeholder="Auto-Recycle Interval" aria-describedby="basic-addon1">
+                </div>
+            </div>
+
+            <div class="card"  style='margin-bottom: 10px; margin-top:10px '>
+                <div class="card-body">
+                    Service stops when the system goes to sleep
+                    <input type="checkbox" id="idleScan">
+                </div>
+            </div>
+
+            <div class="card"  style='margin-bottom: 10px; margin-top:10px '>
+                <div class="card-body">
+                    Service stops after the browser is minimized(Unstable, because of the chrome api)
+                    <input type="checkbox" id="lostFocusScan">
+                </div>
+            </div>
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-1">
+                        <button class="btn btn-primary" id="submit" >Submit</button>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script src="options.js"></script>
+<link rel="stylesheet" href="./bootstrap.css">
+<link
+        rel="stylesheet"
+        href="http_cdnjs.cloudflare.com_ajax_libs_animate.css_4.1.1_animate.css"
+/>
+
+<script src="./bootstrap.js"></script>

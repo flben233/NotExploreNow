@@ -1,0 +1,25 @@
+{
+    "name": "现在不看",
+    "description": "自动回收暂时用不上的页面",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "background",
+        "contextMenus",
+        "tabs",
+        "idle",
+        "storage"
+    ],
+
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "Hello.png"
+    },
+    "options_ui":
+    {
+        "page": "options.html"
+    }
+}
